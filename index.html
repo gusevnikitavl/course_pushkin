@@ -1580,5 +1580,26 @@
     });
   });
 </script>
+
+<!-- ── COZE AI CHAT WIDGET ── -->
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7650912529962926133',
+    },
+    componentProps: {
+      title: 'ИИ-помощник',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_tAwNvbYmEBe3bOq87AP3iwSpMjMX2HcWZl1N0Rh9lYck8m1KLRdRJGDqdfGlODyv',
+      onRefreshToken: function () {
+        return 'pat_tAwNvbYmEBe3bOq87AP3iwSpMjMX2HcWZl1N0Rh9lYck8m1KLRdRJGDqdfGlODyv'
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
